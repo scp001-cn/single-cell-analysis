@@ -1,0 +1,16 @@
+单细胞测序总论
+在单细胞水平上进行的组学测序分析
+分析流程：
+  1. 获取数据--一般GEO
+  2. 读入数据
+  3. 质量控制--线粒体基因、红细胞、counts、genes
+  4. 标准化与归一化--NormalizeData,ScaleData,FindVariableFeatures,SCT
+  5. 去除干扰因素--细胞周期、双细胞、批次
+  6. 降维聚类--PCA,UMPA,TSNE
+  7. 细胞注释
+  8. 寻找marker基因--FindMarkers
+  9. 拟时序分析--Monocle2,Monocle3,RNA velocity
+  10. 细胞通讯--cellChat,CellPhoneDB
+  11. 转录因子--SCENIC
+  12. 坚定肿瘤细胞--CopyKAT,InferCNV
+  13. 其他分析--bulk RNA-seq,富集分析，生存分析等
